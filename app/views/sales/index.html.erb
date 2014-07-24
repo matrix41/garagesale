@@ -1,0 +1,17 @@
+<h2>Garage Sale</h2>
+<table border=5>
+<tr>
+	<th> Item </th>
+	<th> Price </th>
+	<th> Condition </th>
+	<th> Quantity </th>
+</tr>
+<tr>
+	<%= @sales.each do |sale| %>
+	  <td><%= sale.item %></td>
+	  <td>$<%= sale.price/100 %></td>
+	  <td><%= sale.condition %></td>
+	  <td><%= sale.quantity %></td>
+</tr>
+	<% end %>
+</table>
