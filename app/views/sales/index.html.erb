@@ -1,4 +1,4 @@
-<h2>Garage Sale</h2>
+<h2>aka Garage Sale</h2>
 <table border=5>
 <tr>
 	<th> Item </th>
@@ -7,9 +7,9 @@
 	<th> Quantity </th>
 </tr>
 <tr>
-	<%= @sales.each do |sale| %>
+	<% @sales.each do |sale| %>
 	  <td><%= sale.item %></td>
-	  <td>$<%= sale.price/100 %></td>
+	  <td>$<%= sale.price/100.0 %></td>
 	  <td><%= sale.condition %></td>
 	  <td><%= sale.quantity %></td>
 </tr>
